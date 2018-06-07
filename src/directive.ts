@@ -91,6 +91,8 @@ export class FormDirective implements OnInit, OnDestroy {
             errors: this._formGroupDirective.errors
           })
         );
+        this._updating = false;
+
       });
 
     this._formGroupDirective.statusChanges
